@@ -82,6 +82,10 @@ void handle_command(const string &message) {
 
 }
 
+void setup() {
+
+}
+
 void loop() {
 
     string command;
@@ -95,8 +99,11 @@ void loop() {
 }
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    setup();
+
+    while (true) {
+        loop();
+    }
 }
 
 void test(int test_result, const string &description) {
